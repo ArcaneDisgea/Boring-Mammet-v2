@@ -1,8 +1,8 @@
 {
-  "name": "discord-express",
+  "name": "boring-mammet-v2",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
