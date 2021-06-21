@@ -1,0 +1,19 @@
+{
+  "name": "discord-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "xiv-character-cards": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
