@@ -8,6 +8,7 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
+    "@airjp73/dice-notation": "^2.2.2",
     "discord.js": "^12.5.3",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",

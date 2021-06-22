@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@airjp73/dice-notation@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@airjp73/dice-notation/-/dice-notation-2.2.2.tgz#ec41a681d37ea75ac61941b8baf76a7cf50865eb"
+  integrity sha512-a7SpP+SfdBq3JyuvGJr+57klumNd6dg0+r9pTaxfUcgNI4V+u2BOC0T/keVoLIWv9dBzt4xhnRTPharQUYKm9g==
+  dependencies:
+    moo "^0.5.1"
+
 "@discordjs/collection@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.1.6.tgz#9e9a7637f4e4e0688fd8b2b5c63133c91607682c"
@@ -1056,6 +1063,11 @@ mkdirp@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
+moo@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/moo/-/moo-0.5.1.tgz#7aae7f384b9b09f620b6abf6f74ebbcd1b65dbc4"
+  integrity sha512-I1mnb5xn4fO80BH9BLcF0yLypy2UKl+Cb01Fu0hJRkJjlCRtxZMWkTdAtDd5ZqCOxtCkhmRwyI57vWT+1iZ67w==
 
 ms@2.0.0:
   version "2.0.0"
