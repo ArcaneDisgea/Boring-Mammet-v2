@@ -9,8 +9,6 @@ module.exports = {
     const numberEmoji = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"];
     let responses = [];
 
-    console.log(array.length)
-
     if (array.length >= 11) {
         return message.channel.send(":anger: Too many responses!")
     }
