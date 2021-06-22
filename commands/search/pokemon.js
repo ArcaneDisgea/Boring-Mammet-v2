@@ -15,7 +15,8 @@ function firstUpper(n) {
 module.exports = {
   name: "pokemon",
   description: "Search for a pokemon!",
-  usage: "##pokemon",
+  usage: "##pokemon [pokemon name]",
+  aliases: ["p", "poke", "mon"],
   cooldown: 5,
   execute(message, args) {
     if (args.length > 1) {
