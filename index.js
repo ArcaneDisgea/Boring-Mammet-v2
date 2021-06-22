@@ -1,18 +1,13 @@
-const config = require("./config");
+const { port, token, prefix} = require("./config");
 const fs = require("fs");
 
 const express = require("express");
 const app = express();
-const port = 3000;
 
 const Discord = require("discord.js");
-const { cwd } = require("process");
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const cooldowns = new Discord.Collection();
-
-const token = config.token;
-const prefix = config.prefix;
 
 const walk = function (dir) {
   let results = [];
@@ -109,7 +104,7 @@ client.login(token);
 
 // start site
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Site started at http://localhost:${port}`);
 });
 
 app.get("/", (req, res) => {

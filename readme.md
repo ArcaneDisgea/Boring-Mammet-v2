@@ -17,7 +17,8 @@ You will need to construct a ``config.js`` using the template below and place it
 module.exports = {
   prefix: "PREFIX",
   applicationid: "DISCORD APPLICATION ID",
-  token: "DISCORD API BOT TOKEN"
+  token: "DISCORD API BOT TOKEN",
+  port: number
 };
 ```
 
