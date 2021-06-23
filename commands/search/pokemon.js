@@ -29,8 +29,6 @@ module.exports = {
         const pokeName = firstUpper(response.name);
         embed.setTitle(pokeName).setThumbnail(response.sprites.front_default);
 
-        message.channel.startTyping();
-
         fetch(response.species.url)
           .then((response) => response.json())
           .then((data) => {
@@ -65,7 +63,6 @@ module.exports = {
                     .addField("Base Happiness", data.base_happiness, true)
                     .addField("Capture Rate", data.capture_rate + "/255", true)
                     .setFooter("Powered by Pokeapi", "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png");
-                  message.channel.stopTyping();
                   return message.channel.send(embed);
                 }
                 embed
@@ -92,13 +89,11 @@ module.exports = {
                   .addField("Base Happiness", data.base_happiness, true)
                   .addField("Capture Rate", data.capture_rate + "/255", true)
                   .setFooter("Powered by Pokeapi", "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png");
-                message.channel.stopTyping();
                 return message.channel.send(embed);
               });
           });
       })
       .catch(function (error) {
-        message.channel.stopTyping();
         return message.channel.send(":bug: Please check your spelling and try again.");
       });
   },

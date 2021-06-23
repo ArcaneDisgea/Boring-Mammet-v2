@@ -93,9 +93,12 @@ client.on("message", (message) => {
   setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
   try {
+    message.channel.startTyping();
     command.execute(message, args);
+    message.channel.stopTyping();
   } catch (error) {
     console.error(error);
+    message.channel.stopTyping();
     message.reply(":bug: There was an error trying to execute that command!");
   }
 });

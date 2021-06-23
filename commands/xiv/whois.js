@@ -9,7 +9,6 @@ module.exports = {
   aliases: ["who", "profile"],
   cooldown: 5,
   execute(message, args) {
-    message.channel.startTyping();
     const card = new CardCreator();
     let url = `https://xivapi.com/character/search?name=${args[1]}%20${args[2]}&server=${args[0]}`;
 
@@ -37,13 +36,11 @@ module.exports = {
 
         createCard((err, response) => {
           if (err) {
-            message.channel.stopTyping();
             return err;
           }
           const buffer = response.binary.image;
           const attachment = new MessageAttachment(buffer, "bufferedfilename.png");
 
-          message.channel.stopTyping();
           return message.channel.send(attachment);
         });
       });

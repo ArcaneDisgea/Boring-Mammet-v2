@@ -6,12 +6,10 @@ module.exports = {
   aliases: ["dog", "puppy", "pupper", "doggo"],
   cooldown: 5,
   execute(message, args) {
-    message.channel.startTyping();
     fetch("https://api.thedogapi.com/v1/images/search?size=full")
       .then((response) => response.json())
       .then((data) => {
         message.channel.send(data[0].url);
-        message.channel.stopTyping();
       });
   },
 };
