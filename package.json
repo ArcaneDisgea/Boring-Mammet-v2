@@ -11,6 +11,7 @@
     "@airjp73/dice-notation": "^2.2.2",
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
+    "javascript-time-ago": "^2.3.7",
     "node-fetch": "^2.6.1",
     "pokedex-promise-v2": "^3.3.2",
     "xiv-character-cards": "^1.2.1"

@@ -1,4 +1,3 @@
-const { CardCreator } = require("xiv-character-cards");
 const fetch = require("node-fetch");
 
 module.exports = {
