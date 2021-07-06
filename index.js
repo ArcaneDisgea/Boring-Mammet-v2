@@ -1,11 +1,6 @@
 require('dotenv').config()
-// const { port, token, prefix} = require("./config");
 const fs = require("fs");
 
-// const express = require("express");
-// const app = express();
-
-const port = process.env.PORT
 const token = process.env.TOKEN
 const prefix = process.env.PREFIX
 
@@ -109,24 +104,3 @@ client.on("message", (message) => {
 });
 
 client.login(token);
-
-// // start site
-// app.listen(port, () => {
-//   console.log(`Site started at http://localhost:${port}`);
-// });
-
-// app.get("/", (req, res) => {
-//   res.sendFile(__dirname + '/site/index.html');
-// });
-
-// app.get("/nickname", (req, res) => {
-//   let nick = req.query.name;
-//   let user = req.query.user;
-//   let guildID = req.query.guild;
-
-//   const guild = client.guilds.cache.get(guildID);
-
-//   guild.members.fetch(user).then((member) => {
-//     member.setNickname(nick);
-//   });
-// });
