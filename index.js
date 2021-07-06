@@ -1,7 +1,6 @@
 require('dotenv').config()
 const fs = require("fs");
 
-const port = process.env.PORT
 const token = process.env.TOKEN
 const prefix = process.env.PREFIX
 
