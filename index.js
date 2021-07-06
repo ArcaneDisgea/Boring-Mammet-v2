@@ -1,5 +1,4 @@
 require('dotenv').config()
-// const { port, token, prefix} = require("./config");
 const fs = require("fs");
 
 const express = require("express");
