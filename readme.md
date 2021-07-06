@@ -11,15 +11,13 @@ cd REPO_NAME/
 yarn install && yarn start
 ```
 
-You will need to construct a ``config.js`` using the template below and place it in the root directory, next to ``index.js``.
+Environment variables will need to be set up for the following.
 
-```js
-module.exports = {
-  prefix: "PREFIX",
-  applicationid: "DISCORD APPLICATION ID",
-  token: "DISCORD API BOT TOKEN",
-  port: number
-};
+```
+PREFIX=PREFIX
+APPLICATIONID=DISCORD APPLICATION ID
+TOKEN=DISCORD API BOT TOKEN
+PORT=number
 ```
 
 Lastly, you can generate an invite link for your bot using the [Discord Permissions Calculator](https://discordapi.com/permissions.html).

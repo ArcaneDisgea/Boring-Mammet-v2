@@ -1,4 +1,4 @@
-const prefix = require("../../config.js").prefix;
+const prefix = process.env.PREFIX
 const { MessageEmbed, Message } = require("discord.js");
 
 module.exports = {

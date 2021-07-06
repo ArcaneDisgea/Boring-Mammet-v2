@@ -1,8 +1,13 @@
-const { port, token, prefix} = require("./config");
+require('dotenv').config()
+// const { port, token, prefix} = require("./config");
 const fs = require("fs");
 
 const express = require("express");
 const app = express();
+
+const port = process.env.PORT
+const token = process.env.TOKEN
+const prefix = process.env.PREFIX
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
